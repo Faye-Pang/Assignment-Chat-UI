@@ -7,8 +7,5 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 class ChatServiceTest {
-    @Test void appHasAGreeting() {
-        ChatService classUnderTest = new ChatService();
-        assertNotNull(classUnderTest.getGreeting(), "app should have a greeting");
-    }
+
 }

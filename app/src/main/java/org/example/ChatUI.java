@@ -47,24 +47,18 @@ public class ChatUI extends JFrame {
         getContentPane().add(scrollPane, BorderLayout.CENTER);
         getContentPane().add(inputPanel, BorderLayout.SOUTH);
 
-        sendButton.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                String userMessage = inputField.getText();
-                if(!userMessage.isEmpty()){
-                    sendMessage(userMessage);
-                    inputField.setText("");
-                }
+        sendButton.addActionListener(e -> {
+            String userMessage = inputField.getText();
+            if(!userMessage.isEmpty()){
+                sendMessage(userMessage);
+                inputField.setText("");
             }
         });
-        inputField.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                String userMessage = inputField.getText();
-                if(!userMessage.isEmpty()){
-                    sendMessage(userMessage);
-                    inputField.setText("");
-                }
+        inputField.addActionListener(e -> {
+            String userMessage = inputField.getText();
+            if(!userMessage.isEmpty()){
+                sendMessage(userMessage);
+                inputField.setText("");
             }
         });
     }
