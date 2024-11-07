@@ -30,6 +30,10 @@ dependencies {
     implementation("io.github.stefanbratanov:jvm-openai:0.11.0")
 }
 
+dependencies {
+    implementation("io.github.cdimascio:java-dotenv:5.2.2")
+}
+
 // Apply a specific Java toolchain to ease working on different environments.
 java {
     toolchain {

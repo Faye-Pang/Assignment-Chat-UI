@@ -3,13 +3,17 @@
  */
 package org.example;
 import io.github.stefanbratanov.jvm.openai.*;
-
+import io.github.cdimascio.dotenv.Dotenv;
 import java.util.ArrayList;
 import java.util.List;
 
 public class ChatService {
+    private static final Dotenv dotenv = Dotenv.configure()
+            .directory(System.getProperty("user.dir"))
+            .load();
+
     public String callOpenAi(List<String> previousMessages, String userMessage){
-        var apiKey ="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";
+        var apiKey = dotenv.get("OPENAI_API_KEY");
         var builder = OpenAI.newBuilder(apiKey);
         OpenAI openAI = builder.build();
         ChatClient chatClient = openAI.chatClient();
