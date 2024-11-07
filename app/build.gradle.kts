@@ -24,7 +24,6 @@ dependencies {
     // This dependency is used by the application.
     implementation(libs.guava)
 
-
 }
 dependencies {
     implementation("io.github.stefanbratanov:jvm-openai:0.11.0")

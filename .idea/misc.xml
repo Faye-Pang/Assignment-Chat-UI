@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ExternalStorageConfigurationManager" enabled="true" />
 <<<<<<< HEAD
+<<<<<<< HEAD
   <component name="ProjectRootManager" version="2" languageLevel="JDK_19" project-jdk-name="19" project-jdk-type="JavaSDK" />
+=======
+>>>>>>> f55cfc51bcc4b45ada2c8123bfb38083672d39cf
 =======
 >>>>>>> f55cfc51bcc4b45ada2c8123bfb38083672d39cf
 </project>
