@@ -50,6 +50,9 @@ public class ChatUI extends JFrame {
             if(!userMessage.isEmpty()){
                 sendMessage(userMessage);
                 inputField.setText("");
+            }else{
+                JOptionPane.showMessageDialog(this,
+                        "Please input any message.", "Current message is null", JOptionPane.WARNING_MESSAGE);
             }
         });
         inputField.addActionListener(e -> {
@@ -57,6 +60,9 @@ public class ChatUI extends JFrame {
             if(!userMessage.isEmpty()){
                 sendMessage(userMessage);
                 inputField.setText("");
+            }else{
+                JOptionPane.showMessageDialog(this,
+                        "Please input any message.", "Current message is null", JOptionPane.WARNING_MESSAGE);
             }
         });
     }
